@@ -1,0 +1,22 @@
+{
+  "name": "binance-mytrades-accounting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taboca/binance-mytrades-accounting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taboca/binance-mytrades-accounting/issues"
+  },
+  "homepage": "https://github.com/taboca/binance-mytrades-accounting#readme",
+  "dependencies": {
+    "node-binance-api": "^0.12.5"
+  }
+}
