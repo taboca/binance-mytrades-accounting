@@ -3,19 +3,13 @@ const Keys    = require('./config.js');
 
 const binance = new Binance().options(Keys);
 
-// https://binance-docs.github.io/apidocs/spot/en/#query-margin-account-39-s-trade-list-user_data
+// This example shows how to pass options
 
-function go() { 
-  
-  let options = { 
-    limit: 2 
-  };
-  
-  binance.trades("BTCBRL", (error, trades, symbol) => {
-    console.info(symbol+" trade history", trades);
-  }, options);
+let options = { 
+  limit: 2 // Limit results to two entries
+};
 
-}
-
-go(); 
+binance.trades("BTCBRL", (error, trades, symbol) => {
+  console.info(symbol+" trade history", trades);
+}, options);
 
